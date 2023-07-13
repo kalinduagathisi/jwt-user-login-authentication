@@ -1,7 +1,7 @@
 package com.jwt.user;
 
 public enum Role {
-    ROLE,
+    USER,
 
     ADMIN
 }

@@ -33,11 +33,12 @@ public class User  implements UserDetails {
     private String lastName;
 
     @Column(name = "username")
-    private String username;
+    private String email;
 
     @Column(name = "password")
     private String password;
 
+    @Column(name = "role")
     @Enumerated(EnumType.STRING)  // this is an enum
     private Role role;
 
@@ -53,7 +54,7 @@ public class User  implements UserDetails {
 
     @Override
     public String getUsername() {
-        return username;
+        return email;
     }
 
     @Override
